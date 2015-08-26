@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flash Player 8 File Upload/Download</title>
+<style type="text/css" media="screen">
+<!--
+html, body {margin: 0; padding: 0; border: 0 none;}
+img, a img, form { margin: 0; padding: 0; border: 0 none; }
+
+html, body {
+	margin: 2px;
+	padding: 0;
+	text-align: center;
+	background: #fff;
+}
+
+html, body, p { font: normal normal normal 90%/1.6em "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
+html, body, div, p, table, td { color: #000;}
+
+div#wrapper {
+	margin: 10px auto;
+	padding: 0;
+	width: 550px;
+	border: 1px solid #999;
+	background: #fff;
+}
+
+div#wrapper p {
+	text-align: left;
+	margin: 0 10px;
+	border-bottom: 1px solid #00f;
+}
+
+-->
+</style>
+</head>
+<body bgcolor="#ffffff">
+	<div id="wrapper">
+	<p>
+		<strong>Note:</strong> <br />
+		You will need <a href="http://www.macromedia.com/software/flashplayer/public_beta/" title="Flash Player 8">Flash Player 8</a>. <br />
+		Currently set to 250kb MAX filesize for each file that can be uploaded!<br />
+		Currently set to support only Image File Types.<br />
+	</p>
+
+	<div id="flashcontent">Alternate content goes here</div>
+	<script type="text/javascript" src="FlashObject.js"></script>
+	<script>
+		<!--
+			var flashObj = new FlashObject ("uploadDownload.swf", "uploadDownload", "550", "400", 8, "#FFFFFF", true);
+			flashObj.addVariable ("uploadUrl", "uploadFile.cfm");
+			flashObj.addVariable ("downloadListUrl", "viewFiles.cfm");
+			flashObj.addVariable ("maxFileSize", "250"); // in kb
+			flashObj.write ("flashcontent");
+		// -->
+	</script>
+	</div>
+
+</body>
+</html>
